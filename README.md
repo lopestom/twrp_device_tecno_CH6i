@@ -1,16 +1,15 @@
 # TWRP device tree for Tecno Camon 19 Neo (CH6i) - A12
+MT6768 - Helio G85
 
 ## Status
 
 Specs [here](https://www.gsmarena.com/tecno_camon_19_neo-11619.php)
-MT6768 - Helio G85
 
 ## What's the history?
-The tester [tommynok -4pda](https://4pda.to/forum/index.php?showuser=4408448)
+The tester [tommynok -4pda](https://4pda.to/forum/index.php?showuser=4408448) only install `boot-TECNO-CH6i_V1529-A12_noCrypt.img` test file to know if TWRP can start.
 
-only install `boot-TECNO-CH6i_V1529-A12_noCrypt.img` test file to know if TWRP can start.
+#### This branch A12 not have encrypt/decrypt process and files because boot.img has only 32MB. So is need change the `\vendor\etc\fstab.mt6768` to ***encryptable*** in the vendor.img for TWRP backup the `\Data` partition.
 
-This branch A12 not have encrypt/decrypt process and files because boot.img has only 32MB. So the process to backup Data have vendor.img ***encryptable***.
 ---------------------------
 
 ![Tecno Camon 19 Neo](https://fdn2.gsmarena.com/vv/pics/tecno/tecno-camon-19-neo-1.jpg)
