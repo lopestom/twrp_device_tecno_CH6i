@@ -96,4 +96,3 @@ jobs:
        name: TWRP37x_12_V1529
        files: | 
          twrp/out/target/product/CH6i/boot*.img
-
